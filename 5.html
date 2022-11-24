@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="la">
+     <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Web lab4</title>
+		<link rel="stylesheet" type="text/css" href="5.css">
+    </head>
+    <body>
+        <script>
+            function Open(popup) {
+            var elem1 = document.getElementById(popup);
+              elem1.style.display = "block";
+              var elem2 = document.getElementById("Opacity");
+              elem2.style.display = "block";
+
+            }
+
+            function Close (a){
+                var elem1 = document.getElementById("popup1");
+                elem1.style.display = "none";
+                var elem2 = document.getElementById("popup2");
+                elem2.style.display = "none";
+                var elem3 = document.getElementById("popup3");
+                elem3.style.display = "none";
+                var elem2 = document.getElementById("Opacity");
+                elem2.style.display = "none";
+            }
+        </script>
+        <div class="Visible">
+            <div class="News">
+                <h3>Новость 1</h3>
+                <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet asperiores aut nihil! Corporis debitis labore fugiat id, eligendi ratione veritatis!</div>
+                <button class onclick="Open('popup1');">Открыть всплывающее окно</button>
+            </div>
+            <div class="News">
+                <h3>Новость 2</h3>
+                <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet asperiores aut nihil! Corporis debitis labore fugiat id, eligendi ratione veritatis!</div>
+                <button class onclick="Open('popup2');">Открыть всплывающее окно</button>
+            </div><div class="News">
+                <h3>Новость 3</h3>
+                <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet asperiores aut nihil! Corporis debitis labore fugiat id, eligendi ratione veritatis!</div>
+                <button class onclick="Open('popup3');">Открыть всплывающее окно</button>
+            </div>
+        </div>
+        <div class="Opacity" id="Opacity" onclick="Close('popup3');"></div>
+        <div class="Popup" id="popup1">
+            <h1>Новость 1</h1>
+            <div>Новость 1:Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet asperiores aut nihil! Corporis debitis labore fugiat id, eligendi ratione veritatis!</div><div> Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam hic, ipsa, ullam, cupiditate eveniet at voluptate corrupti commodi nobis ratione voluptatem! Vel animi totam cupiditate doloribus ad ab exercitationem officia eveniet impedit? Deleniti quasi nisi consectetur perspiciatis quibusdam nostrum, enim perferendis nam, magni molestias recusandae id libero vitae, repudiandae praesentium.</div> 
+        </div>
+        <div class="Popup" id="popup2">
+            <h1>Новость 2</h1>
+            <div>Новость 2:Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet asperiores aut nihil! Corporis debitis labore fugiat id, eligendi ratione veritatis!</div><div> Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam hic, ipsa, ullam, cupiditate eveniet at voluptate corrupti commodi nobis ratione voluptatem! Vel animi totam cupiditate doloribus ad ab exercitationem officia eveniet impedit? Deleniti quasi nisi consectetur perspiciatis quibusdam nostrum, enim perferendis nam, magni molestias recusandae id libero vitae, repudiandae praesentium.</div> 
+        </div>
+        <div class="Popup" id="popup3">
+            <h1>Новость 3</h1>
+            <div>Новость 3:Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet asperiores aut nihil! Corporis debitis labore fugiat id, eligendi ratione veritatis!</div><div> Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam hic, ipsa, ullam, cupiditate eveniet at voluptate corrupti commodi nobis ratione voluptatem! Vel animi totam cupiditate doloribus ad ab exercitationem officia eveniet impedit? Deleniti quasi nisi consectetur perspiciatis quibusdam nostrum, enim perferendis nam, magni molestias recusandae id libero vitae, repudiandae praesentium.</div> 
+        </div>
+    </body>
+   
+</html>
